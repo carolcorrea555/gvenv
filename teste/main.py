@@ -22,6 +22,7 @@ try:
                 if row is None:
                     break
                 print(row)
+            connection.commit()
 
 except oracledb.Error as error:
     print("There was an error .o.")
